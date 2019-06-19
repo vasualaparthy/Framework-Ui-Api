@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="N11 Test Suite" >
+    <listeners>
+        <listener class-name="com.framework.utils.listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="LoginTest">
+        <classes>
+            <class name="tests.LoginTests">
+            	<methods>
+            		<exclude name="verifyCoverageAreaIssue"/>
+            		<exclude name="verifyNewDiscountRequest"/>
+            		<exclude name="verifyChatSurvey"/>
+            		<exclude name="verifyWifiInquiry"/>
+            		<exclude name="verifyAirvaveMagicBoxSupport"/>
+        		    <exclude name="verifyAccountNumberInquiry"/>
+        		    <exclude name="verifyNextBillInquiry"/>
+        		    <exclude name="verifyAddHotspotService"/>
+        		    <include name="verifyUC11DataInquiry"/>
+        		    <exclude name="verifyUC07AdjustmentsCreditInquiry"/> 
+        		    <exclude name="UC18ChangeofOwnershipTransferofLiabilityInquiry"/>
+        		    <exclude name="UC29DeviceUnlockInquiry"/>
+        		    <exclude name="UC39SecurityPinAuthorizedUserChange"/>    
+            	</methods>
+            </class>
+        </classes>
+    </test>
+</suite>
